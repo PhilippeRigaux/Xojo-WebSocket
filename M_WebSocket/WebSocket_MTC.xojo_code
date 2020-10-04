@@ -209,7 +209,7 @@ Implements Writeable
 		  dim urlComps as new M_WebSocket.URLComponents( url.Trim )
 		  
 		  dim rx as new RegEx
-		  rx.SearchPattern = "^(?:http|ws)s:"
+		  rx.SearchPattern = "^(?:http|ws)s"
 		  
 		  Address = urlComps.Host
 		  if urlComps.Port > 0 then
